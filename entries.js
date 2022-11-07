@@ -21,7 +21,7 @@ light.position.set(1,1,100);
 scene.add(light);
 
 var obj = new THREE.ObjectLoader();
-obj.load('https://githubusercontent.com/19Maaka/19Maaka.github.io/main/untitled.obj',
+obj.load('https://github.com/19Maaka/19Maaka.github.io/blob/main/untitled.obj',
     function(object){
         scene.add(object);
     }
