@@ -20,8 +20,12 @@ var light = new THREE.PointLight(0xffffff,1,0);
 light.position.set(1,1,100);
 scene.add(light);
 
-var obj = new OBJLoader().load('https://raw.githubusercontent.com/19Maaka/19Maaka.github.io/main/untitled.obj');
-scene.add(obj);
+var obj = new THREE.ObjectLoader();
+obj.load('https://raw.githubusercontent.com/19Maaka/19Maaka.github.io/main/untitled.obj',
+    function(object){
+        scene.add(object);
+    }
+);
 
 function animate(){
     requestAnimationFrame(animate);
