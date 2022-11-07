@@ -8,7 +8,7 @@ camera.lookAt( 0, 0, 0 );
 
 var scene = new THREE.Scene();
 
-var texture = new THREE.TextureLoader().load('cat.jpg');
+var texture = new THREE.TextureLoader().load('https://github.com/19Maaka/19Maaka.github.io/blob/main/cat.jpg');
 var material = new THREE.MeshBasicMaterial( { map: texture } );
 
 var geometry = new THREE.PlaneGeometry(10, 10*.75);
